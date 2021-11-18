@@ -5,8 +5,6 @@ import {
   Route,
   NavLink,
   useRouteMatch,
-  useHistory,
-  useLocation,
 } from "react-router-dom";
 import NewQuizForm from "../components/NewQuizForm";
 import NewTopicForm from "../components/NewTopicForm";
@@ -53,10 +51,6 @@ export default function App() {
 
 function TopicsRoutes() {
   let match = useRouteMatch();
-  let history = useHistory();
-  let location = useLocation();
-
-  console.log(match, history, location);
 
   return (
     <>
